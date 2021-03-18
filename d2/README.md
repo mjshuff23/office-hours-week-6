@@ -15,3 +15,5 @@
 [Code](./promise-02.js)
 
 ## Use the fetch API to make Promise-based API calls
+
+[Code](./promise-03.js)
