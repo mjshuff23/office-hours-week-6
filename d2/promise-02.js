@@ -5,9 +5,11 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function waitAndLog() {
+wait(2000).then(() => console.log('Done waiting with .then'));
+
+async function asyncWaitAndLog() {
   await wait(2000);
   console.log('The waiting is over!');
 }
 
-waitAndLog();
+asyncWaitAndLog();
