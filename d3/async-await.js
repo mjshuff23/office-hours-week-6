@@ -3,12 +3,28 @@
 *******************************************************************************/
 const fetch = require('node-fetch');
 
+// getPerson = async (id) => {
+//   let response = await fetch(`https://swapi.dev/api/people/${id}`);
+//   let person = await response.json();
+//   console.log(person);
+// };
+
+// getPerson(1); // => Luke Skywalker
+// getPerson(2); // => C-3PO
+// getPerson(3); // => R2-D2
+
 getPerson = async (id) => {
   let response = await fetch(`https://swapi.dev/api/people/${id}`);
   let person = await response.json();
-  console.log(person);
+  return person;
 };
 
-getPerson(1); // => Luke Skywalker
-getPerson(2); // => C-3PO
-getPerson(3); // => R2-D2
+(async () => {
+  console.log(await getPerson(1));
+})();
+(async () => {
+  console.log(await getPerson(2));
+})();
+(async () => {
+  console.log(await getPerson(3));
+})();
