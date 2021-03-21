@@ -7,5 +7,5 @@ const myPromise = new Promise((resolve, reject) => {
   }, 300);
 });
 
-myPromise.then(console.log);
+// myPromise.then(console.log);
 myPromise.then((resolve) => console.log(resolve));
