@@ -6,11 +6,11 @@ function wait(ms) {
 }
 
 // wait 2 seconds, and then console.log we're done
-wait(2000).then(() => console.log('Done waiting with .then'));
+wait(2000)
+  .then(() => console.log('Done waiting with .then'))
+  .then(() => asyncWaitAndLog());
 
 async function asyncWaitAndLog() {
   await wait(2000);
   console.log('The waiting is over!');
 }
-
-asyncWaitAndLog();

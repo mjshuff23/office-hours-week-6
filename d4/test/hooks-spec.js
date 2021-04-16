@@ -66,6 +66,6 @@ describe('myMap()', () => {
     const callbackSpy = chai.spy(callback);
     // You actually have to use the spy for the callback
     myMap(inputArray, callbackSpy);
-    expect(callbackSpy).to.have.been.called.exactly(3);
+    expect(callbackSpy).to.have.been.called.exactly(inputArray.length);
   });
 });

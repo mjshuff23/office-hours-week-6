@@ -28,6 +28,7 @@ getPerson = async (id) => {
 (async () => {
   console.log(await getPerson(2));
 })();
+
 (async () => {
   console.log(await getPerson(3));
 })();
