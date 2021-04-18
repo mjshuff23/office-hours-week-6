@@ -9,7 +9,6 @@ fetch(`https://swapi.dev/api/people/1`)
 
 // fetch(`https://swapi.dev/api/people/1`)
 //   .then((res) => {
-//     console.log('hi');
 //     return res.json();
 //   })
 //   .then(console.log);

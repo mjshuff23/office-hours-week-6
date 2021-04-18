@@ -12,5 +12,5 @@ wait(2000)
 
 async function asyncWaitAndLog() {
   await wait(2000);
-  console.log('The waiting is over!');
+  console.log('The async waiting is over!');
 }

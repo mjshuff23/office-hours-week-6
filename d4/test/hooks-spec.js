@@ -34,7 +34,10 @@ describe('myMap()', () => {
     // equal -> checks memory locations to ensure it's the same thing
     expect(expectedArray).to.equal(expectedArray); // <-- Same location in memory
     // Same tests
-    expect(myMap(inputArray, (element) => element + 1)).to.eql(expectedArray);
+
+    let result = myMap(inputArray, (element) => element + 1);
+
+    expect(result).to.eql(expectedArray);
     // eql is the same as deep.equal and it will check the values inside of the object or the array
     // equal will strictly check memory locations to make sure we're looking at the same thing
 

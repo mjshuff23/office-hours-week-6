@@ -9,7 +9,7 @@ describe('isFive(num)', () => {
     const actual1 = isFive(num1); // should be true
     const expectedAnswer1 = true; // since we know that 5 == 5 we expect true
     //Assert
-    expect(actual1).to.equal(expectedAnswer1); // Although we can write it this. it is more readable with a refactor
+    expect(actual1).to.equal(expectedAnswer1); // Although we can write this. it is more readable with a refactor
     expect(actual1).to.be.true;
     //lets test more
     //Arrange
@@ -39,7 +39,7 @@ describe('isOdd(number)', () => {
     const actual2 = isOdd(num2); // should be true
     const actual3 = isOdd(num3); // should be true
     //Assert
-    expect(actual1).to.be.true;
+    expect(actual1).to.be.true; // <--- to.be.true;
     expect(actual2).to.be.true;
     expect(actual3).to.be.true;
   });
@@ -84,7 +84,7 @@ describe('myRange(min, max, step)', () => {
       const actual2 = myRange(min2, max2);
       const expected2 = [];
       // Assert
-      expect(actual1).to.eql(expected1);
+      expect(actual1).to.eql(expected1); // same as deep.equal
       expect(actual2).to.eql(expected2);
     });
   });
